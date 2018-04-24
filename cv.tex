@@ -1,0 +1,165 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage[resetlabels]{multibib}
+
+% Set margins.
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\voffset=-0.125in
+\headheight=0.0in
+\topmargin=0.0in
+\textheight=9.0in
+
+% Define colors.
+\definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
+\definecolor{datecolor}{rgb}{0.5,0.5,0.5}
+
+% Turn off page numbering.
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\datestyle Darshan Chaudhary}
+\cfoot{\datestyle \thepage}
+\rfoot{\datestyle May 2017}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% Set parameters and content.
+\newcommand{\namestyle}{\Huge \scshape}
+\newcommand{\deptstyle}{\footnotesize \rmfamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor} \footnotesize \rmfamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \rmfamily \upshape}
+
+% Remove list labels.
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+% Define bibliographies.
+\newcites{j,c}{Journal Publications,Conference Publications}
+
+
+\begin{document}
+
+% Print title.
+\begin{center}
+    \namestyle Darshan Chaudhary \\[0.3em]
+    \addressstyle Github: github.com/darshanime \ $\cdot$ Phone: +91-7795394755\\
+    Email: darshankchaudhary@gmail.com \ $\cdot$ Web: \url{http://darshanime.github.io}
+\end{center}
+
+\small
+
+
+\section*{Industry Experience}
+
+\subparagraph{Product Development Engineer}
+Appknox $\cdot$ Bangalore, India $\cdot$ 06/2016 - Present (11 mos)
+\begin{itemize}
+    \item Maintained Appknox's core backend web app with new features, test suites and bug fixes.
+    \item Designed and built the internal CRM module used for end-to-end managing of all client accounts.
+    \item Designed and implemented a centralized, containerized logs processing pipeline (collection+filtering+visualization) for all the projects of the company based on the Elasticsearch, Logstash, Kibana (ELK) stack. Deployed it using Docker Machine, with Compose for orchestrating the containers.
+    \item Built a tool for conducting employee appraisals with self-evaluation and anonymous feedback on fellow colleagues.
+    \item Built an internal mobile application tracking tool which emails users when metrics of apps subscribed to change.
+\end{itemize}
+
+\subparagraph{Machine Learning Intern}
+Exponentia Datalabs $\cdot$ Mumbai, India $\cdot$ 06/2015 - 12/2015 (6 mos)
+\begin{itemize}
+    \item Designed an age-gender prediction pipeline for a client wanting to keep a tab on the profile of customers visiting the company owned supermarkets. Implemented the pipeline using caffe(the deep learning framework), OpenCV and SciPy stack. The model read the CCTV feed, used background subtraction algorithms for motion detection, detected faces using Viola-Jones algorithm, passed the cropped faces to a convolution neural network which output age and gender to be stored in MySQL database.
+\end{itemize}
+
+\subparagraph{Summer Intern}
+Essar Power $\cdot$ Jamnagar, India $\cdot$ 05/2014 - 07/2014 (3 mos)
+\begin{itemize}
+    \item Analyzed the organization structure of the company, grievance redressal policies, decision making policies etc. Conducted a feasibility study of Supercritical boilers for the power plant. 
+\end{itemize}
+
+
+\section*{Personal Projects}
+
+
+\subparagraph{Algorithmic agents to play games}
+Implemented Minimax, Expectimax, Markov Decision Processes 
+\begin{itemize}
+    \item Agent successfully played non-deterministic games like 2048, Pacman with adversarial/random ghosts (opponents), zero sum games like Tic-Tac-Toe etc.
+\end{itemize}
+
+\subparagraph{Sandpiles simulation program}
+Ability to record visualizations
+\begin{itemize}
+    \item Wrote a program which allows defining generalized sandpiles and an initial state to begin with and simulates it till it reaches a stable state with the option to record final state and/or intermediate states.
+\end{itemize}
+
+\subparagraph{Open source contributions}
+Contributed to Sympy, Scrapy
+\begin{itemize}
+    \item Made bug fix contributions to Sympy, Scrapy and other open source projects.
+\end{itemize}
+
+\subparagraph{Mortality Prediction System}
+Outperformed standard industry scores like SAPS, MPM
+\begin{itemize}
+    \item Used an ensemble of SVMs created using the SciPy stack to create a mortality prediction system for ICU patients. The dataset used to train the ensemble included time series readings of 6 body vitals and 25 lab measurements for each patient with a final binary label indicating patient's survival. Model outperformed commonly used acuity scores, such as APACHE, SAPS, MPM, and
+SOFA.\@
+\end{itemize}
+
+\subparagraph{Tutorial series for Scrapy}
+Multi-part deep dive tutorial
+\begin{itemize}
+    \item Wrote a four part tutorial series showing how to scrape data from popular websites. Talked about how to handle websites making heavy use of JavaScript.
+\end{itemize}
+
+\section*{Education}
+
+\subparagraph{BITS Pilani}
+ BE (Hons.) Mechanical Engineering $\cdot$ 08/2012 - 06/2016
+\begin{itemize}
+    \item University Honors Program.  CGPA 7.69/10
+\end{itemize}
+
+\subparagraph{BITS Pilani}
+Minors in Finance $\cdot$ 08/2013 - 06/2016
+\begin{itemize}
+    \item University Minors Program. Courses included - Stock Markets, Accounting, Derivatives and Risk management
+\end{itemize}
+
+\subparagraph{Delhi Public School, Gurgaon}
+Higher Secondary Certificate, (Class XII) $\cdot$ 2012
+\begin{itemize}
+    \item Percentage achieved: 91.0\% $\cdot$ Subjects: Informatics Practices, Maths, Physics, Chemistry
+\end{itemize}
+
+\subparagraph{Delhi Public School, Gurgaon}
+Secondary School Certificate, (Class X) $\cdot$ 2010
+\begin{itemize}
+    \item Percentage achieved: 91.2\% $\cdot$ Subjects: Maths, Sciences, English
+\end{itemize}
+
+\section*{Computer Skills}
+
+\begin{itemize}
+    \item \textbf{Languages} \ Python, Java, C, Bash
+    \item \textbf{Domains} \ Data Structures, Algorithms, Operating Systems
+    \item \textbf{OSs, Databases} \ GNU/Linux, Apache, Nginx, PostgreSQL, MySQL
+    \item \textbf{Version Control} \ Git/Github
+    \item \textbf{Cloud Providers} Amazon Web Services, Google Cloud
+    \item \textbf{Containerization} Docker, Docker Compose, Kuberenetes, Deis
+\end{itemize}
+
+
+\section*{Miscellaneous}
+
+\begin{itemize}
+    \item Co-Organizer of Bangalore Machine Learning Meetup (950 members)
+    \item Gave talks about underfitting and overfitting in machine learning models, mortality prediction using ML at above mentioned meetup
+    \item Maintain a blog at https://darshanime.github.io/til
+    \item Emacs evangelist; successfully converted multiple Vim users to Emacs 
+    \item Volunteered at the Harvard Model United Nations Conference 2014, Hyderabad
+    \item Built an All Terrain Vehicle (ATV) for participating in SAE BAJA 2015
+    \item Member of various clubs during undergraduate degree including ELAS, Embryo, Bulls and Bears, CRUx
+\end{itemize}
+
+\end{document}
