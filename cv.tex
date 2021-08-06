@@ -4,7 +4,6 @@
 \usepackage{color}
 \usepackage{enumerate}
 \usepackage{fancyhdr}
-\usepackage[resetlabels]{multibib}
 
 % Set margins.
 \oddsidemargin=0.0in
@@ -13,7 +12,7 @@
 \voffset=-0.125in
 \headheight=0.0in
 \topmargin=0.0in
-\textheight=9.0in
+\textheight=25.0in
 
 % Define colors.
 \definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
@@ -24,7 +23,7 @@
 \fancyhf{}
 \lfoot{\datestyle Darshan Chaudhary}
 \cfoot{\datestyle \thepage}
-\rfoot{\datestyle April 2018}
+\rfoot{\datestyle Aug 2021}
 \renewcommand{\headrulewidth}{0.0pt}
 
 % Set parameters and content.
@@ -37,130 +36,83 @@
 \renewcommand{\labelitemi}{}
 \renewcommand{\labelitemii}{}
 
-% Define bibliographies.
-\newcites{j,c}{Journal Publications,Conference Publications}
-
-
 \begin{document}
 
 % Print title.
 \begin{center}
     \namestyle Darshan Chaudhary \\[0.3em]
-    \addressstyle Github: github.com/darshanime \ $\cdot$ Phone: +91-7795394755\\
-    Email: darshankchaudhary@gmail.com \ $\cdot$ Web: \url{https://darshanime.github.io}
+    \addressstyle Phone: +91-7795394755  $\cdot$  Email: darshankchaudhary@gmail.com \\
+    Github: \url{https://github.com/darshanime}
 \end{center}
 
 \small
-
-
 \section*{Industry Experience}
 
-\subparagraph{Software Developer}
-Draup $\cdot$ Bangalore, India $\cdot$ 06/2017 - Present
+\subparagraph{Product Engineer}
+Gojek $\cdot$ Bangalore, India $\cdot$ 12/2018 - Present
 \begin{itemize}
-    \item Built internal services used for making sense of data at scale - company names, location and scaled them with Kubernetes.
-    \item Maintained the infrastructure for Draup - using Terraform to provision, Jenkins for CD, Ansible to build
-    \item Maintained Draup platform's core backend web application with new features, bug fixes
+    \item Team Lead for Driver Quality cluster, part of Driver Platform team.
+    \item Built and maintained features that improve the income, quality of the drivers on the platform.
+\end{itemize}
+
+\subparagraph{Software Developer}
+Draup $\cdot$ Bangalore, India $\cdot$ 06/2017 - 12/2018
+\begin{itemize}
+    \item Built internal services used for making sense of company data and scaled them with Kubernetes.
+    \item Maintained Draup platform's infrastructure and core web application backend with new features, bug fixes.
 \end{itemize}
 
 \subparagraph{Product Development Engineer}
 Appknox $\cdot$ Bangalore, India $\cdot$ 06/2016 - 06/2017
 \begin{itemize}
-    \item Designed and built the internal CRM module used for end-to-end managing of all client accounts.
-    \item Designed and implemented a centralized, containerized logs processing pipeline (collection+filtering+visualization) for all the projects of the company based on the Elasticsearch, Logstash, Kibana (ELK) stack. Deployed it using Docker Machine, with Compose for orchestrating the containers.
-    \item Maintained Appknox's core backend web app with new features, test suites and bug fixes.
+    \item Designed and built the internal CRM app used for end-to-end managing of all client accounts.
 \end{itemize}
 
 \subparagraph{Machine Learning Intern}
 Exponentia Datalabs $\cdot$ Mumbai, India $\cdot$ 06/2015 - 12/2015 (6 mos)
 \begin{itemize}
-    \item Designed an age-gender prediction pipeline for a client wanting to keep a tab on the profile of customers visiting the company owned supermarkets. Implemented the pipeline using caffe(the deep learning framework), OpenCV and SciPy stack. The model read the CCTV feed, used background subtraction algorithms for motion detection, detected faces using Viola-Jones algorithm, passed the cropped faces to a convolution neural network which output age and gender to be stored in MySQL database.
+    \item Designed an age-gender prediction pipeline for supermarkets using caffe lib, OpenCV and SciPy stack.
 \end{itemize}
 
 
 \section*{Personal Projects}
 
 
-\subparagraph{Open source contributions}
-Contributed to Heimdall, Sympy, Scrapy, Zulip
-\begin{itemize}
-    \item Made bug fix contributions to Sympy, Scrapy and other open source projects.
-\end{itemize}
+\subparagraph{oss}
+Collaborator on ArgoCD, CoreDNS projects, contributor to Prometheus
 
-\subparagraph{Computer Science notes}
-Open sourced personal computer science notes 
-\begin{itemize}
-    \item Topics included Machine Learning, Operating Systems, Compilers, Golang etc. Well received by community - github.com/darshanime/notes
-\end{itemize}
+\subparagraph{gofherd}
+Library for running user defined functions with bounded parallelism - github.com/darshanime/gofherd
 
-\subparagraph{Algorithmic agents to play games}
-Implemented Minimax, Expectimax, Markov Decision Processes 
-\begin{itemize}
-    \item Agent successfully played non-deterministic games like 2048, Pacman with adversarial/random ghosts (opponents), zero sum games like Tic-Tac-Toe etc.
-\end{itemize}
+\subparagraph{netpeek}
+Layer 7 network sniffer - github.com/darshanime/netpeek
 
-\subparagraph{Sandpiles simulation program}
-Ability to record visualizations
-\begin{itemize}
-    \item Wrote a program which allows defining generalized sandpiles and an initial state to begin with and simulates it till it reaches a stable state with the option to record final state and/or intermediate states.
-\end{itemize}
-
-\subparagraph{Mortality Prediction System}
-Outperformed standard industry scores like SAPS, MPM
-\begin{itemize}
-    \item Used an ensemble of SVMs created using the SciPy stack to create a mortality prediction system for ICU patients. The dataset used to train the ensemble included time series readings of 6 body vitals and 25 lab measurements for each patient with a final binary label indicating patient's survival. Model outperformed commonly used acuity scores, such as APACHE, SAPS, MPM, and
-SOFA.\@
-\end{itemize}
+\subparagraph{devkube}
+Bootstrap a Kubernetes cluster with custom binaries without kubeadm - github.com/darshanime/devkube
 
 \section*{Education}
 
 \subparagraph{BITS Pilani}
- BE (Hons.) Mechanical Engineering $\cdot$ 08/2012 - 06/2016
-\begin{itemize}
-    \item University Honors Program.  CGPA 7.69/10
-\end{itemize}
+ BE (Hons.) Mechanical Engineering $\cdot$ 08/2012 - 06/2016 $\cdot$ CGPA 7.69/10
 
 \subparagraph{BITS Pilani}
 Minors in Finance $\cdot$ 08/2013 - 06/2016
-\begin{itemize}
-    \item University Minors Program. Courses included - Stock Markets, Accounting, Derivatives and Risk management
-\end{itemize}
 
 \subparagraph{Delhi Public School, Gurgaon}
-Higher Secondary Certificate, (Class XII) $\cdot$ 2012
-\begin{itemize}
-    \item Percentage achieved: 91.0\% $\cdot$ Subjects: Informatics Practices, Maths, Physics, Chemistry
-\end{itemize}
+Higher Secondary Certificate, (Class XII) $\cdot$ 2012 $\cdot$ Percentage: 91.0\%
 
 \subparagraph{Delhi Public School, Gurgaon}
-Secondary School Certificate, (Class X) $\cdot$ 2010
-\begin{itemize}
-    \item Percentage achieved: 91.2\% $\cdot$ Subjects: Maths, Sciences, English
-\end{itemize}
+Secondary School Certificate, (Class X) $\cdot$ 2010 $\cdot$ Percentage: 91.2\%
 
 \section*{Computer Skills}
 
 \begin{itemize}
-    \item \textbf{Languages} \ Python, Go, Java, C, Bash
+    \item \textbf{Languages} \ Go, Python, C
     \item \textbf{Domains} \ Data Structures, Algorithms, Operating Systems
     \item \textbf{OSs | Databases} \ GNU/Linux | PostgreSQL, MySQL, MongoDB
     \item \textbf{Version Control} \ Git
     \item \textbf{Cloud Providers} Amazon Web Services, Google Cloud
-    \item \textbf{Containerization | Orchestrators} Docker, Kubernetes, Docker Compose, Cloud Foundry
-\end{itemize}
-
-
-\section*{Miscellaneous}
-
-\begin{itemize}
-    \item Organizer of Bangalore Advanced Machine Learning Meetup - https://www.meetup.com/baml-meetup/
-    \item Gave talks about mortality prediction using ML, reinforcement learning at above mentioned meetup
-    \item Host of The Open Internals Podcast - https://openinternals.com/
-    \item Maintain a blog at https://darshanime.github.io/til
-    \item Emacs evangelist; successfully converted multiple Vim users to Emacs 
-    \item Volunteered at the Harvard Model United Nations Conference 2014, Hyderabad
-    \item Built an All Terrain Vehicle (ATV) for participating in SAE BAJA 2015
-    \item Member of various clubs during undergraduate degree including ELAS, Embryo, Bulls and Bears, CRUx
+    \item \textbf{Containerization | Orchestrators} Docker, Kubernetes, Docker Compose
 \end{itemize}
 
 \end{document}
